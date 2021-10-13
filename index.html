@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{font-family: 'Big Shoulders Display',sans-serif; font-size: 15px;}
+    @media screen and (min-width:900px) {
+      .container{display: flex;flex-direction: row;flex-flow: row wrap;width:60%;margin-left: 20%;margin-right: 20%;margin-top: 15%;margin-bottom: 10%;}
+      h1{color: hsl(0, 0%, 95%);margin-top: 10%; margin-left: 10%;}
+      p{color: hsla(0, 0%, 100%, 0.75);margin-left: 10%;}
+      .sedan{background-color: hsl(31, 77%, 52%);width:33%;border: 2px solid hsl(31, 77%, 52%);border-top-left-radius: 10px;border-bottom-left-radius: 10px;}
+      .suv{background-color: hsl(184, 100%, 22%);width:33%;}
+      .luxury{background-color: hsl(179, 100%, 13%);width: 33%;border: 2px solid hsl(179, 100%, 13%);border-top-right-radius:10px;border-bottom-right-radius: 10px;}
+      a{text-decoration: none;color:hsl(0, 0%, 95%);padding-left: 10px;}
+      .sedan.button{margin-top: 25%;margin-left: 10%;margin-bottom: 15%;background-color:hsl(0, 0%, 95%);border:2px solid hsl(31, 77%, 52%);border-radius: 10px;}
+      .suv.button{margin-top: 25%;margin-left: 10%;margin-bottom: 15%;background-color: hsl(0, 0%, 95%);border: 2px solid hsl(184, 100%, 22%);border-radius: 10px;}
+      .luxury.button{margin-top: 25%;margin-left: 10%;margin-bottom: 15%;background-color: hsl(0, 0%, 95%);border:2px solid hsl(179, 100%, 13%);border-radius: 10px;}
+      span{margin-left: 10%;}
+      img{padding-top: 10%;}
+    }
+    @media screen  and (max-width:900px) {
+        .container{display: flex;flex-direction: column; margin-top: 10%;margin-bottom: 10%;margin-left: 5%;margin-right: 5%;width: 80%;}
+        h1{color: hsl(0, 0%, 95%);margin-top: 10%; margin-left: 10%;}
+        p{color: hsla(0, 0%, 100%, 0.75);margin-left: 10%;}
+        .sedan{background-color: hsl(31, 77%, 52%);border: 2px solid hsl(31, 77%, 52%);border-top-left-radius: 10px;border-top-right-radius: 10px;}
+        .suv{background-color: hsl(184, 100%, 22%);}
+        .luxury{background-color: hsl(179, 100%, 13%);border: 2px solid hsl(179, 100%, 13%);border-bottom-right-radius:10px;border-bottom-left-radius: 10px;}
+        a{text-decoration: none;color:hsl(0, 0%, 95%);padding-left: 10px;}
+        .sedan.button{width: 30%;margin-top: 25%;margin-left: 10%;margin-bottom: 15%;background-color:hsl(0, 0%, 95%);border:2px solid hsl(31, 77%, 52%);border-radius: 10px;}
+        .suv.button{width: 30%;margin-top: 25%;margin-left: 10%;margin-bottom: 15%;background-color: hsl(0, 0%, 95%);border: 2px solid hsl(184, 100%, 22%);border-radius: 10px;}
+        .luxury.button{width: 30%;margin-top: 25%;margin-left: 10%;margin-bottom: 15%;background-color: hsl(0, 0%, 95%);border:2px solid hsl(179, 100%, 13%);border-radius: 10px;}
+        span{margin-left: 10%;}
+        img{padding-top: 10%;}
+
+      }
+    
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+  </style>
+</head>
+<body>
+  <div class='container'>
+    <div class='sedan'>
+      <span class='icon'>
+        <img src="./images/icon-sedans.svg" alt="Sedan car Icon">
+      </span>
+      <h1>Sedans</h1>
+      <p>Choose a sedan for its <br> affordablity and excellent <br> fuel economy.Ideal for <br> cruising in the city or on <br> your next road trip.</p>
+      <div class='sedan button'>
+        <a href="#" style="color:hsl(31, 77%, 52%) ;">Learn More</a>
+      </div>
+    </div>
+
+    <div class='suv'>
+      <span class='icon'>
+        <img src="./images/icon-suvs.svg" alt="Suv car icon">
+      </span>
+      <h1>SUVS</h1>
+      <p>Take an SUV for its spacious <br> interior,power, and <br> versitality.Perfect for your <br> next family vacation and <br> off-road adventures. </p>
+      <div class='suv button'>
+        <a href="#" style="color: hsl(184, 100%, 22%);align-items: center;">Learn More</a>
+      </div>
+    </div>
+
+    <div class='luxury'>
+      <span class='icon'>
+        <img src="./images/icon-luxury.svg" alt="Luxury car icon">
+      </span>
+      <h1>Luxury</h1>
+      <p>Cruise in the best car brands <br>without the bloated prices. <br>Enjoy the enhanced comfort <br> of a luxury rental and arrive <br> in style.</p>
+      <div class='luxury button'>
+        <a href="#" style="color:hsl(179, 100%, 13%)">Learn More</a>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Rahul Solanki</a>.
+  </div>
+</body>
+</html>
